@@ -20,20 +20,14 @@ LOCAL_PATH := device/samsung/n8013
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-
 # Rootdir
 PRODUCT_COPY_FILES += \
     device/samsung/n8013/rootdir/init.target.rc:root/init.target.rc
 
-# Audio
+# Gps
 PRODUCT_COPY_FILES += \
-    device/samsung/n80xx-common/configs/tiny_hw.xml:system/etc/sound/GT-N8013
+    device/samsung/n8000/configs/gps.xml:system/etc/gps.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
-
-# Gps
-PRODUCT_COPY_FILES += \
-    device/samsung/n8013/configs/gps.conf:system/etc/gps.conf \
-    device/samsung/n8013/configs/gps.xml:system/etc/gps.xml
