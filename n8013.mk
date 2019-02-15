@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # Gps
 PRODUCT_COPY_FILES += \
-    device/samsung/n8000/configs/gps.xml:system/etc/gps.xml
+    device/samsung/n8013/configs/gps.xml:system/etc/gps.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
