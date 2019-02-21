@@ -24,6 +24,4 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_COPY_FILES += \
     device/samsung/n8013/rootdir/init.target.rc:root/init.target.rc
 
-# These are the hardware-specific features
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+$(call inherit-product-if-exists, vendor/samsung/n8013/n8013-vendor.mk)
