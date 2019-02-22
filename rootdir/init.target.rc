@@ -1,6 +1,5 @@
 on init
-    export LD_SHIM_LIBS libsamsung_symbols.so
-    
+
     # cpu freq
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq/boost_freq
