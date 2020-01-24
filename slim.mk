@@ -8,7 +8,7 @@ $(call inherit-product, device/samsung/n8013/n8013.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit some common SlimROMS stuff.
-$(call inherit-product, vendor/slim/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/slim/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n8013
